@@ -9,7 +9,8 @@
     "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
     "start:backend": "cd backend && npm start",
     "start:frontend": "cd frontend && npm run preview",
-    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "dependencies": {
     "dotenv": "^17.2.3"
